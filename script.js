@@ -69,15 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 
-    // compass rotating animation (looks horrible)
-    // const compass = document.querySelector('.compass');
-    // let rotation = 0;
-    
-    // setInterval(() => {
-    //     rotation += 0.5;
-    //     compass.style.transform = `rotate(${rotation}deg)`;
-    // }, 50);
-    
     const sparkles = document.querySelectorAll('.sparkle');
     sparkles.forEach((sparkle, index) => {
         setInterval(() => {
@@ -87,11 +78,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // parllax effect
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    document.querySelector('.big-star-center').style.transform = 
-        `translate(-50%, calc(-50% + ${scrolled * 0.3}px))`;
-    document.querySelector('.compass').style.transform = 
-        `translateY(${scrolled * 0.2}px)`;
-});
+// window.addEventListener('scroll', () => {
+//     const scrolled = window.pageYOffset;
+//     document.querySelector('.big-star-center').style.transform = 
+//         `translate(-50%, calc(-50% + ${scrolled * 0.3}px))`;
+//     document.querySelector('.compass').style.transform = 
+//         `translateY(${scrolled * 0.2}px)`;
+// });
 
